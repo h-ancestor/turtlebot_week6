@@ -14,20 +14,9 @@ ROS 2 Humble package dùng OpenCV và MediaPipe để nhận diện cử chỉ t
 
 Ubuntu 22.04, ROS 2 Humble, TurtleBot 4 Simulation từ bài trước, webcam, Python 3.10, OpenCV và MediaPipe. Hệ thống mô phỏng tuần trước cần nằm tại `"$HOME/Tương tác người - robot/bài thực hành 04"`; nếu khác, thay đường dẫn tương ứng trong các lệnh bên dưới.
 
-## Cài đặt và build
 
-Thay `<PUBLIC_REPOSITORY_URL>` bằng URL repository của bạn:
 
-```bash
-LAB_ROOT="$HOME/Tương tác người - robot"
-PKG="$LAB_ROOT/thực _ hành _06/gesture_turtlebot4"
-mkdir -p "$LAB_ROOT/thực _ hành _06"
-git clone <PUBLIC_REPOSITORY_URL> "$PKG"
-cd "$PKG"
-./setup_environment.sh
-source /opt/ros/humble/setup.bash
-colcon --log-base log build --base-paths . --build-base build --install-base install --symlink-install
-```
+
 
 `setup_environment.sh` cài OpenCV/Pillow, cài các thư viện Python đã ghim phiên bản và tải model nếu model chưa có. Script dùng `sudo` cho các gói Ubuntu. Việc cài đặt/build không mở webcam; quyền camera chỉ cần khi chạy node nhận diện.
 
