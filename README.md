@@ -10,9 +10,7 @@ ROS 2 Humble package dùng OpenCV và MediaPipe để nhận diện cử chỉ t
 - `launch/`: launch nhận diện riêng hoặc nhận diện cùng node điều khiển.
 - `models/gesture_recognizer.task`: model MediaPipe dùng khi chạy.
 
-## Yêu cầu
 
-Ubuntu 22.04, ROS 2 Humble, TurtleBot 4 Simulation từ bài trước, webcam, Python 3.10, OpenCV và MediaPipe. Hệ thống mô phỏng tuần trước cần nằm tại `"$HOME/Tương tác người - robot/bài thực hành 04"`; nếu khác, thay đường dẫn tương ứng trong các lệnh bên dưới.
 
 
 
@@ -20,7 +18,7 @@ Ubuntu 22.04, ROS 2 Humble, TurtleBot 4 Simulation từ bài trước, webcam, P
 
 `setup_environment.sh` cài OpenCV/Pillow, cài các thư viện Python đã ghim phiên bản và tải model nếu model chưa có. Script dùng `sudo` cho các gói Ubuntu. Việc cài đặt/build không mở webcam; quyền camera chỉ cần khi chạy node nhận diện.
 
-Trước khi public repository, sửa tên/email maintainer mẫu trong `setup.py` và `package.xml`, cùng dòng bản quyền mẫu trong `LICENSE`.
+
 
 ## Chạy thủ công
 
